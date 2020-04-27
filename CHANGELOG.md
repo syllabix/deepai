@@ -1,13 +1,13 @@
-# Changelog - v0.1.0
-#### Released Apr 27 2020
+# Changelog - v0.2.0
+#### Released Apr 28 2020
 
 
 ## Features
 
-feat: initial commit supporting nsfw and content moderation apis
+feat: add face recognition api
 
 
 
 ## Release Contributors
 
-Tom Stoepker <tom.stoepker@gmail.com>
+tom stoepker <tom@moali.io>

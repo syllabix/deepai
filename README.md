@@ -48,7 +48,7 @@ The cli is thinly wrapped interface around the client itself using the following
 
 ```
   -api string
-        an identifier for a deepai api (nsfw, moderation)
+        an identifier for a deepai api (nsfw, moderation, face)
   -f string
         a valid path to an image file
   -t string

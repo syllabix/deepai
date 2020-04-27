@@ -15,7 +15,7 @@ import (
 func main() {
 	token := flag.String("t", "", "a valid deep ai token")
 	filename := flag.String("f", "", "a valid path to an image file")
-	api := flag.String("api", "", "an identifier for a deepai api (nsfw, moderation, face)")
+	api := flag.String("api", "", "an identifier for a deepai api (nsfw, moderation, face, demographics)")
 	flag.Parse()
 
 	ctx := context.Background()
@@ -47,6 +47,14 @@ func main() {
 
 	case "face":
 		response, err := client.RecognizeFaces(ctx, img)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		fmt.Printf("%+v", response)
+
+	case "demographics":
+		response, err := client.GetFaceDemographics(ctx, img)
 		if err != nil {
 			log.Fatal(err)
 		}

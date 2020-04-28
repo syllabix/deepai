@@ -1,4 +1,5 @@
 # deepai
+[![Go Report Card](https://goreportcard.com/badge/github.com/syllabix/deepai)](https://goreportcard.com/report/github.com/syllabix/deepai)
 
 an unofficial go client and cli for the deep ai api.
 

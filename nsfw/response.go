@@ -21,7 +21,7 @@ const (
 	ExposedButtocks        Detectable = "Buttocks - Exposed"
 )
 
-// Response contains the ouput and id of a content moderation response
+// Response contains the output and id of a content moderation response
 type Response struct {
 	Output Output `json:"output"`
 	ID     string `json:"id"`

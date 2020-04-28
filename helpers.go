@@ -6,13 +6,21 @@ import (
 )
 
 func imageForm(file io.Reader) (*multipart.Writer, io.Reader) {
+	return prepare("image", file)
+}
+
+func textForm(file io.Reader) (*multipart.Writer, io.Reader) {
+	return prepare("text", file)
+}
+
+func prepare(field string, file io.Reader) (*multipart.Writer, io.Reader) {
 	pr, pw := io.Pipe()
 	mpw := multipart.NewWriter(pw)
 
 	go func() {
 		defer pw.Close()
 
-		formPart, err := mpw.CreateFormFile("image", "target")
+		formPart, err := mpw.CreateFormFile(field, "target")
 		if err != nil {
 			pw.CloseWithError(err)
 		}

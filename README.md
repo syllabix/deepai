@@ -51,8 +51,8 @@ The cli is thinly wrapped interface around the client itself using the following
         an identifier for a deepai api (nsfw, moderation, face)
   -f string
         a valid path to an image file
-  -t string
-        a valid deep ai token
+  -key string
+        a valid deep ai api key
 ```
 
 

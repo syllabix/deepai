@@ -2,9 +2,10 @@ package deepai
 
 import (
 	"context"
-	"deepai/moderation"
 	"encoding/json"
 	"io"
+
+	"github.com/syllabix/deepai/moderation"
 )
 
 // Moderate the provided image content using the deepai content moderation API

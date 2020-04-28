@@ -1,10 +1,10 @@
-# Changelog - v0.4.0
+# Changelog - v0.5.0
 #### Released Apr 28 2020
 
 
 ## Features
 
-feat: add sentiment analysis and summaration apis for text files
+feat: move project to proper go modules setup
 
 
 

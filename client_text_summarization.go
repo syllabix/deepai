@@ -2,9 +2,10 @@ package deepai
 
 import (
 	"context"
-	"deepai/summarization"
 	"encoding/json"
 	"io"
+
+	"github.com/syllabix/deepai/summarization"
 )
 
 // SummarizeText will use the deepai api to summarize text in the provided file

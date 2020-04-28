@@ -2,9 +2,10 @@ package deepai
 
 import (
 	"context"
-	"deepai/sentiment"
 	"encoding/json"
 	"io"
+
+	"github.com/syllabix/deepai/sentiment"
 )
 
 // AnalyzeSentiment will use the deepai api to anaylse the sentiment of text in the provided file

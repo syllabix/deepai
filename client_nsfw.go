@@ -2,9 +2,10 @@ package deepai
 
 import (
 	"context"
-	"deepai/nsfw"
 	"encoding/json"
 	"io"
+
+	"github.com/syllabix/deepai/nsfw"
 )
 
 // DetectNudity will use the deepai api to detect nudity in the provided file

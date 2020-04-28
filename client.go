@@ -2,7 +2,7 @@ package deepai
 
 import (
 	"context"
-	"deepai/config"
+	"github.com/syllabix/deepai/config"
 	"errors"
 	"fmt"
 	"io"

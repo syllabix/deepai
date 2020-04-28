@@ -1,9 +1,10 @@
 package option
 
 import (
-	"deepai/config"
 	"net/http"
 	"time"
+
+	"github.com/syllabix/deepai/config"
 )
 
 // Timeout is a config option for a deepai client that will set

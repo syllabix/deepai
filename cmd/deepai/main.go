@@ -2,8 +2,6 @@ package main
 
 import (
 	"context"
-	"deepai"
-	"deepai/option"
 	"encoding/json"
 	"flag"
 	"fmt"
@@ -12,6 +10,10 @@ import (
 	"os"
 	"strings"
 	"time"
+
+	"github.com/syllabix/deepai"
+
+	"github.com/syllabix/deepai/option"
 )
 
 type method func(context.Context, io.Reader) (interface{}, error)

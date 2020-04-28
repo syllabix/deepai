@@ -2,9 +2,10 @@ package deepai
 
 import (
 	"context"
-	"deepai/recognition"
 	"encoding/json"
 	"io"
+
+	"github.com/syllabix/deepai/recognition"
 )
 
 // RecognizeFaces will use the deepai api to recognize faces in the provided image
